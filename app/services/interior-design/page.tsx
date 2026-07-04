@@ -9,7 +9,7 @@ export default function InteriorDesignPage() {
     return (
         <>
             {/* Hero */}
-            <section className="relative h-[500px]">
+            <section className="relative h-[300px] sm:h-[380px] md:h-[450px] lg:h-[500px]">
                 {/* Background Image */}
                 <Image
                     src="/Images/interior.png"
@@ -18,76 +18,89 @@ export default function InteriorDesignPage() {
                     priority
                     className="object-cover"
                 />
+
                 {/* Content */}
-                <div className="relative z-10 mx-auto flex h-full max-w-[1440px] items-center justify-center px-6">
+                <div className="relative z-10 mx-auto flex h-full max-w-[1440px] items-center justify-center px-4 sm:px-6 md:px-8 lg:px-6">
                     <div className="max-w-[760px] text-center">
-                        <h1 className="text-[58px] font-[700] leading-[65px] text-white">
+                        <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-[36px] sm:leading-[46px] md:text-[46px] md:leading-[56px] lg:text-[58px] lg:leading-[65px]">
                             Designing Interiors That
-                            <br />
-                            Reflect Your Lifestyle
+                            <br className="hidden sm:block" />
+                            <span className="block sm:inline">
+                                Reflect Your Lifestyle
+                            </span>
                         </h1>
                     </div>
                 </div>
             </section>
 
             {/* About */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <section className="bg-white py-10 md:py-14 lg:py-16">
+                <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 sm:px-6 md:gap-12 lg:grid-cols-2">
 
+                    {/* Left Content */}
                     <div>
-                        <h2 className="text-4xl font-bold mb-8 text-[#000000]">
+                        <h2 className="mb-6 text-[28px] font-bold leading-[38px] text-[#000000] sm:text-[34px] sm:leading-[44px] md:mb-8 md:text-[42px] md:leading-[52px] lg:text-4xl lg:leading-[52px]">
                             Complete Interior Design
-                            <br />
+                            <br className="hidden sm:block" />
                             Solutions Tailored to
-                            <br />
+                            <br className="hidden sm:block" />
                             Your Vision
                         </h2>
 
-                        <p className="text-[#00000099] leading-8 mb-10">
-                            We provide end-to-end interior design services, from concept planning and space design to material selection and final execution. Our team ensures every space reflects your style while maintaining functionality, and elegance. Because we don’t just design , We Provide
+                        <p className="mb-8 text-[15px] leading-7 text-[#00000099] md:mb-10 md:text-base md:leading-8">
+                            We provide end-to-end interior design services, from concept planning and
+                            space design to material selection and final execution. Our team ensures
+                            every space reflects your style while maintaining functionality and
+                            elegance. Because we don’t just design, We Provide.
                         </p>
 
-                        <div className="grid grid-cols-2 gap-6">
+                        {/* Features */}
+                        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
 
                             <div className="flex items-center gap-4">
-                                <div className="bg-orange-500 text-white w-12 h-12 rounded flex items-center justify-center font-bold">
+                                <div className="flex h-11 w-11 items-center justify-center rounded bg-orange-500 font-bold text-white sm:h-12 sm:w-12">
                                     01
                                 </div>
-
-                                <span className="text-[#00000099]">Experienced Engineers</span>
+                                <span className="text-sm text-[#00000099] sm:text-base">
+                                    Experienced Engineers
+                                </span>
                             </div>
 
                             <div className="flex items-center gap-4">
-                                <div className="bg-orange-500 text-white w-12 h-12 rounded flex items-center justify-center font-bold">
+                                <div className="flex h-11 w-11 items-center justify-center rounded bg-orange-500 font-bold text-white sm:h-12 sm:w-12">
                                     02
                                 </div>
-
-                                <span className="text-[#00000099]">High Quality Materials</span>
+                                <span className="text-sm text-[#00000099] sm:text-base">
+                                    High Quality Materials
+                                </span>
                             </div>
 
                             <div className="flex items-center gap-4">
-                                <div className="bg-orange-500 text-white w-12 h-12 rounded flex items-center justify-center font-bold">
+                                <div className="flex h-11 w-11 items-center justify-center rounded bg-orange-500 font-bold text-white sm:h-12 sm:w-12">
                                     03
                                 </div>
-
-                                <span className="text-[#00000099]">On-Time Project Delivery</span>
+                                <span className="text-sm text-[#00000099] sm:text-base">
+                                    On-Time Project Delivery
+                                </span>
                             </div>
 
                             <div className="flex items-center gap-4">
-                                <div className="bg-orange-500 text-white w-12 h-12 rounded flex items-center justify-center font-bold">
+                                <div className="flex h-11 w-11 items-center justify-center rounded bg-orange-500 font-bold text-white sm:h-12 sm:w-12">
                                     04
                                 </div>
-
-                                <span className="text-[#00000099]">24/7 Support</span>
+                                <span className="text-sm text-[#00000099] sm:text-base">
+                                    24/7 Support
+                                </span>
                             </div>
 
                         </div>
                     </div>
 
-                    <div className="relative h-[500px] rounded-3xl overflow-hidden">
+                    {/* Right Image */}
+                    <div className="relative h-[280px] overflow-hidden rounded-2xl sm:h-[350px] md:h-[420px] lg:h-[500px] lg:rounded-3xl">
                         <Image
                             src="/Images/completeinterior.png"
-                            alt=""
+                            alt="Complete Interior"
                             fill
                             className="object-cover"
                         />
