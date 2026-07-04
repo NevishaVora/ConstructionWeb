@@ -99,7 +99,7 @@ export default function InteriorDesignPage() {
                     {/* Right Image */}
                     <div className="relative h-[280px] overflow-hidden rounded-2xl sm:h-[350px] md:h-[420px] lg:h-[500px] lg:rounded-3xl">
                         <Image
-                            src="/Images/completeinterior.png"
+                            src="/Images/completeInterior.png"
                             alt="Complete Interior"
                             fill
                             className="object-cover"

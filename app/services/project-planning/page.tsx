@@ -100,7 +100,7 @@ export default function ProjectPlanningPage() {
                     {/* Right Image */}
                     <div className="relative h-[280px] overflow-hidden rounded-2xl sm:h-[380px] md:h-[450px] lg:h-[500px] lg:rounded-3xl">
                         <Image
-                            src="/Images/completeproject.png"
+                            src="/Images/completeProject.png"
                             alt="Complete Project Planning"
                             fill
                             className="object-cover"
