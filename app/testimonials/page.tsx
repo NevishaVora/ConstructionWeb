@@ -5,7 +5,7 @@ import Testimonials from "@/components/Home/Testimonials/Testimonials";
 export default function TestimonialsPage() {
   return (
     <>
-      <Testimonials />
+      <Testimonials/>
       <Contact />
       <Footer />
     </>

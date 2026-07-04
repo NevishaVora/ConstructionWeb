@@ -1,80 +1,116 @@
 "use client";
 
 import Image from "next/image";
-import { FiPhoneCall } from "react-icons/fi";
 
 export default function Contact() {
     return (
-        <section className="py-20 bg-white">
-            <div className="container mx-auto px-5">
-
+        <section className="bg-white py-6 sm:py-8 lg:py-10">
+            <div className="container mx-auto px-5 lg:px-8">
                 {/* Heading */}
-                <div className="text-center max-w-2xl mx-auto mb-14">
-                    <h2 className="text-[46px] font-bold text-[#1C1C1E]">
+                <div className="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
+                    <h2 className="text-3xl font-bold text-[#1C1C1E] sm:text-4xl lg:text-[46px]">
                         Contact Our Team
                     </h2>
 
-                    <p className="mt-3 text-[17px] leading-7 text-[#8E8E93]">
+                    <p className="mt-3 text-base leading-7 text-[#8E8E93] lg:text-[17px]">
                         Get in touch with our experts today to discuss your project and
                         receive professional guidance tailored to your needs.
                     </p>
                 </div>
 
                 {/* Contact Card */}
-                <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-6 mt-8 px-4 md:px-12">
-
-                    {/* Left Map */}
-                    <div className="overflow-hidden rounded-2xl h-full min-h-[300px] md:min-h-[620px]">
+                <div className="grid grid-cols-1 gap-6 lg:grid-cols-[45%_55%] lg:gap-2 lg:px-12">
+                    {/* Map */}
+                    <div className="overflow-hidden rounded-2xl h-[320px] sm:h-[420px] lg:h-auto lg:min-h-[620px]">
                         <iframe
                             title="Google Map"
                             src="https://www.google.com/maps?q=Dallas,Texas&output=embed"
                             loading="lazy"
-                            className="w-full h-full border-0"
+                            className="h-full w-full border-0"
                         />
                     </div>
 
                     {/* Right Card */}
-                    <div className="bg-white rounded-[17px] border border-[#0000001C] shadow-[0_6px_24px_rgba(0,0,0,0.08)]">
-                        <div className="max-w-[520px] mx-auto text-center px-6 py-8">
-
-                            <p className="text-[#FF6900] text-[16px] sm:text-[18px] font-medium">
+                    <div
+                        className="
+              flex items-center justify-center
+              rounded-[17px]
+              border border-[#0000001C]
+              bg-white
+              p-8
+              shadow-[0_6px_24px_rgba(0,0,0,0.08)]
+              sm:p-10
+              lg:p-12
+            "
+                    >
+                        <div className="max-w-[470px] text-center">
+                            <p className="text-lg font-normal text-[#FF6900] lg:text-[20px]">
                                 Don't miss out!
                             </p>
 
-                            <h2 className="mt-3 text-2xl sm:text-3xl leading-tight font-bold text-[#000000]">
+                            <h2 className="mt-3 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-[30px] lg:leading-[52px]">
                                 Call Us Today for Free Estimate
                             </h2>
 
-                            <p className="mt-3 text-base sm:text-[18px] leading-7 text-[#626262]">
+                            <p className="mt-4 text-base leading-8 text-[#626262] lg:text-[20px] lg:leading-[34px]">
                                 Let's start the conversation. Reach out to us today with any
                                 questions, comments, or concerns. We're here to assist you every
                                 step of the way and we look forward to working with you.
                             </p>
 
                             {/* Phone */}
-                            <div className="flex justify-center items-center gap-4 mt-4">
-
-                                <div className="w-11 h-11 rounded-full bg-[#FF7A00] flex items-center justify-center">
-                                    <Image src="/Images/phoneicon.png" alt="Phone Icon" width={20} height={20} />
+                            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FF7A00]">
+                                    <Image
+                                        src="/Images/phoneicon.png"
+                                        alt="Phone Icon"
+                                        width={22}
+                                        height={22}
+                                    />
                                 </div>
 
-                                <span className="text-[18px] text-[#666] font-medium">+91 0000000000</span>
-
+                                <span className="text-xl font-medium text-[#666] lg:text-[22px]">
+                                    +91 0000000000
+                                </span>
                             </div>
 
                             {/* Button */}
-                            <button className="mt-6 h-[50px] px-6 rounded-md bg-[#FF7A00] text-white text-[16px] sm:text-[18px] font-[500] transition hover:bg-[#f56b00]">
-                                <span className="flex items-center gap-3 justify-center">
-                                    <Image src="/Images/phoneicon.png" alt="Phone Icon" width={18} height={18} />
-                                    Book a Free Consultation
-                                </span>
-                            </button>
+                            <div className="mt-8 flex justify-center">
+                                <button
+                                    className="
+      flex
+      w-full
+      max-w-[420px]
+      items-center
+      justify-center
+      gap-3
+      rounded-[7px]
+      bg-[#FF7A00]
+      px-5
+      py-4
+      text-white
+      transition
+      hover:bg-[#f56b00]
+      sm:w-auto
+      sm:px-9
+    "
+                                >
+                                    <Image
+                                        src="/Images/phoneicon.png"
+                                        alt="Phone Icon"
+                                        width={22}
+                                        height={22}
+                                        className="h-5 w-5 flex-shrink-0"
+                                    />
 
+                                    <span className="text-center text-[15px] font-medium leading-6 sm:text-base">
+                                        Book a Free Consultation
+                                    </span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
     );

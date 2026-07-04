@@ -36,15 +36,15 @@ const services = [
 
 export default function ExpertSolution() {
     return (
-        <section className="bg-[#F8F8F8] py-20">
+        <section className="bg-[#F8F8F8] py-10">
             <div className="mx-auto max-w-[1200px] px-5">
                 {/* Heading */}
-                <div className="mb-14 text-center">
-                    <h2 className="text-[42px] font-bold text-[#222]">
+                <div className="mb-10 text-center sm:mb-12 lg:mb-14">
+                    <h2 className="text-[28px] font-bold leading-tight text-[#222] sm:text-[34px] md:text-[38px] lg:text-[42px]">
                         Our Expert Solutions
                     </h2>
 
-                    <p className="mx-auto mt-3 max-w-[560px] text-[16px] leading-7 text-[#7A7A7A]">
+                    <p className="mx-auto mt-3 max-w-full px-4 text-[14px] leading-6 text-[#7A7A7A] sm:max-w-[500px] sm:px-0 sm:text-[15px] md:max-w-[560px] md:text-[16px] md:leading-7">
                         We offer a full range of construction services designed to deliver
                         quality, efficiency, and reliability.
                     </p>
@@ -68,18 +68,18 @@ export default function ExpertSolution() {
                             </div>
 
                             {/* Content */}
-                            <div className="px-8 py-8 text-center">
-                                <h3 className="mb-4 text-[34px] font-bold text-[#222]">
+                            <div className="px-5 py-6 text-center sm:px-6 sm:py-7 lg:px-8 lg:py-8">
+                                <h3 className="mb-3 text-[24px] font-bold leading-tight text-[#222] sm:mb-4 sm:text-[28px] lg:text-[34px]">
                                     {service.title}
                                 </h3>
 
-                                <p className="mb-8 text-[15px] leading-7 text-[#666]">
+                                <p className="mb-6 text-[14px] leading-6 text-[#666] sm:mb-7 sm:text-[15px] sm:leading-7 lg:mb-8">
                                     {service.description}
                                 </p>
 
                                 <Link
                                     href={service.slug}
-                                    className="inline-block rounded-md bg-[#FF6B00] px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-[#e65f00]"
+                                    className="inline-block rounded-md bg-[#FF6B00] px-6 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-[#e65f00] sm:px-7 sm:py-3 lg:px-8 lg:py-3"
                                 >
                                     Inquiry Now
                                 </Link>
