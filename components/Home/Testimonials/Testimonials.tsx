@@ -9,19 +9,19 @@ const reviews = [
   {
     name: "Sophie Moore",
     date: "18-02-2026",
-    image: "/Images/sophie.png",
+    image: "/Images/Avtar.jpg",
     text: "They gave me a very competitive bid, and were able to start quickly. The installation was fast and professional and they cleaned up after themselves so there was little evidence they were even there.",
   },
   {
     name: "Sophie Moore",
     date: "12-Dec-2025",
-    image: "/Images/sophie.png",
+    image: "/Images/Avtar.jpg",
     text: "They gave me a very competitive bid, and were able to start quickly. The installation was fast and professional and they cleaned up after themselves so there was little evidence they were even there.",
   },
   {
     name: "Sophie Moore",
     date: "03-Jan-2026",
-    image: "/Images/sophie.png",
+    image: "/Images/Avtar.jpg",
     text: "They gave me a very competitive bid, and were able to start quickly. The installation was fast and professional and they cleaned up after themselves so there was little evidence they were even there.",
   },
 ];

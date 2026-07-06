@@ -1,7 +1,7 @@
 const stats = [
   {
-    number: "10,142+",
-    title: "Homes Built and handed over",
+    number: "100+",
+    title: "Homes Handed over",
   },
   {
     number: "10+ Cities",
