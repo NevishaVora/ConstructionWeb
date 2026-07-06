@@ -98,7 +98,7 @@ export default function Footer() {
                   height={16}
                 />
 
-                <span>+91 0000000000</span>
+                <span>+91 9705779991 / +91 9705779992</span>
               </div>
 
               <div className="flex items-center gap-3">
@@ -109,7 +109,14 @@ export default function Footer() {
                   height={16}
                 />
 
-                <span>Anantapur</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Anantapur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#FF6900] transition"
+                >
+                  Anantapur
+                </a>
               </div>
             </div>
           </div>

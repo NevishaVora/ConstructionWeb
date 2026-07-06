@@ -70,7 +70,7 @@ export default function Contact() {
                                 </div>
 
                                 <span className="text-xl font-medium text-[#666] lg:text-[22px]">
-                                    +91 0000000000
+                                    +91 9705779991
                                 </span>
                             </div>
 
